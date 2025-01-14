@@ -1,0 +1,232 @@
+body{
+    display: flex;
+    background-image: url('bodyback.jpg');
+    justify-content: center;
+    color: rgb(5, 110, 75);
+    flex-wrap: wrap;
+}
+h1{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family:cursive;
+
+}
+.scorer{
+    display: flex;
+    background-color: rgb(154, 246, 215);
+    height: 300px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.scorermiddle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 290px;
+
+}
+.scorer12{
+    *{
+        height: 30%;
+        font-size:1.5rem;
+        font-weight: 900;
+        font-family: fantasy;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    display:inline-block;
+    border: 2px solid rgb(0, 0, 0) ;
+    border-radius: 15px;
+    background-color: rgb(122, 253, 207);
+    height: 280px;
+    width: 90%;
+
+}
+.iconparent{
+    display: flex;
+    margin: 5px;
+    justify-content:center;
+    h2{
+        margin: 0%;
+        display: flex;
+        height: 90%;
+        justify-content: center;
+        align-items: center;
+        width:60%;
+    }
+    div{
+        display: flex;
+        height: 90%;
+        justify-content: center;
+        
+
+    }
+}
+#scorer1score{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+}
+#scorer2score{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.board{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(154, 246, 215);
+    
+}
+#mainblock{
+    display: flex;
+    
+    width: 330px;
+    height: 330px;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.block{
+    display:flex;
+    background-color: rgb(209, 255, 255);
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    
+
+}
+.block:hover{
+    background-color: rgb(123, 247, 247);
+    border: 2px solid black;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.3);
+    height: 110px;
+    width: 110px;
+
+    
+
+}
+
+#icon{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    overflow: hidden; 
+}
+
+#icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+}
+.chance{
+    animation: chanceannimation 0.5s ease-out 0s infinite alternate;
+
+}
+@keyframes chanceannimation {
+    from{
+        background-color: rgb(154, 246, 215);
+
+    }
+    to{
+        height:288px ;
+        width: 94% ;
+        background-color: rgb(89, 247, 192);
+        box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.3);
+    }
+}
+.overflow{
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    display:none;
+    backdrop-filter: blur(5px);
+    /* background-color: rgb(152, 150, 150); */
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace
+}
+#prompt{
+    display:flex;
+}
+.prompt{
+    color: white;
+
+    display: flex;
+    width: 500px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-image: url("5423.jpg");
+    background-size:cover;
+    flex-wrap: wrap;
+    
+    div{
+        
+    
+        h2{
+            font-size: 27px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        input{
+            width: 85%;
+            height: 20px;
+            margin: 8px;
+        }
+        button{
+            width: 40%;
+            height: 20px;
+            margin: 8px;
+        }
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+}
+.winnerprompt{
+    animation: winnerpromptann 0.5s ease-out 0s infinite alternate;
+
+}
+@keyframes winnerpromptann {
+    from{
+        background-color: rgb(154, 246, 215);
+
+    }
+    to{
+        height:358px ;
+        width: 510px ;
+        background-color: rgb(89, 247, 192);
+        box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.3);
+    }
+}
+
