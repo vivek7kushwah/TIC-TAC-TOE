@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="difficulty-selector" style="display: none;" id="difficultyContainer">
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+    <h1>TIC TAC TOE</h1>
+    <p>Hello..
+        I am Vivek kushwah and this is my first try to build a simple two players game.
+        Enjoy it ....
+    </p>
+    <div class="scorer">
+        <div class="scorermiddle">
+            <div id="scorer1" class="scorer12">
+                <h2 id="scorer1name" style="height:20% ;">vivek kushwah</h2>
+                <div class="iconparent">
+                    <h2>Cross side </h2>
+                    <div><div id="icon"><img src="bluecross.png"></div></div>
+                </div>
+                <div class="iconparent">
+                    <h2>Score : </h2>
+                    <div style="margin-top: 20px;"><div id="scorer1score">0</div></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="scorermiddle">
+            <div id="scorer2" class="scorer12">
+                <h2 id="scorer2name" style="height:20% ;">vivek kushwah</h2>
+                <div class="iconparent">
+                    <h2>Ring side </h2>
+                    <div><div id="icon"><img src="ring.png"></div></div>
+                </div>
+                <div class="iconparent">
+                    <h2>Score : </h2>
+                    <div style="margin-top: 20px;"><div id="scorer2score">0</div></div>
+                </div>
+
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="board">
+        <div id="mainblock">
+            <div id="block1" class="block"></div>
+            <div id="block2" class="block"></div>
+            <div id="block3" class="block"></div>
+            <div id="block4" class="block"></div>
+            <div id="block5" class="block"></div>
+            <div id="block6" class="block"></div>
+            <div id="block7" class="block"></div>
+            <div id="block8" class="block"></div>
+            <div id="block9" class="block"></div>
+        </div>
+    </div>
+    <div class="overflow" id="prompt">
+        <div class="prompt winnerprompt">
+            <div style="height: 40%;">
+                <h2>HELLO.. LETS HAVE A SOME FUN</h2>
+                <H2>WELCOME TO TIC TAC TOE...!!</H2>
+            </div>
+            <div style="height: 40%;">
+                <div class="mode-selector" style="margin-bottom: 15px;">
+                    <select id="initialGameMode">
+                        <option value="">Select Game Mode</option>
+                        <option value="multiplayer">Two Players</option>
+                        <option value="singleplayer">Play with Computer</option>
+                    </select>
+                </div>
+                <div class="player-inputs">
+                    <input type="text" id="croosuser" placeholder="Enter your name (Cross side player)">
+                    <input type="text" id="ringsuser" placeholder="Enter friend's name (Ring side player)">
+                </div>
+            </div>
+            <div style="height: 20%; flex-direction: row;">
+                <button id="submit">Start Game</button>
+                <button id="Cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div class="overflow " id="alert">
+        <div class="prompt winnerprompt">
+            <div style="height: 60%;">
+                <h2 style="font-size: 40px;">Game Over..!!</h2>
+                
+            </div>
+            <div style="height: 20%;">
+                <h2 id="winnername"> </h2>
+            </div>
+            <div style="height: 20%; flex-direction: row;">
+                <button id="gameover">Next game</button>
+                
+            </div>
+        </div>
+
+    </div>
+    
+
+    <audio src="winningsound.mp3" id="winSound" loop></audio>
+    <audio src="tapsound.mp3" id="tapsound"></audio>
+    <audio src="babackgroundsound.mp3" id="backgroundsound" loop autoplay></audio>
+    <script src="script.js"></script>
+</body>
+</html>
