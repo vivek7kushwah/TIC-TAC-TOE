@@ -300,7 +300,10 @@ function reset() {
     A = [];
     C = [];
     R = [];
-    Turn = "Crosh";
+    if (turn == "Crosh"){
+        turn = "Ring";
+    }
+    else turn = "Crosh";
     isAITurn = false;
     document.getElementById("scorer1").classList.add("chance");
     document.getElementById("scorer2").classList.remove("chance");
